@@ -1,15 +1,19 @@
 class Solution(object):
     def palindrome(self, user_input):
-        for i in range(len(user_input)//2):
-            if user_input[i] != user_input[len(user_input)-1-i]:
+        strs = []
+        for char in user_input:
+            if char.isalnum():
+                strs.append(char.lower())
+        while len(strs) > 1:
+            if strs.pop(0) != strs.pop():
                 return False
-            else:
-                pass
+
         return True
 
 
 word1 = "asdsa"
 word2 = "this is not real"
+word3 = "Asdsa"
 
 solution = Solution()
 res = solution.palindrome(word1)
@@ -17,3 +21,6 @@ print(res)
 
 res2 = solution.palindrome(word2)
 print(res2)
+
+res3 = solution.palindrome(word3)
+print(res3)
