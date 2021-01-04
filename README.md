@@ -1,2 +1,2 @@
 # algorithm
- studying algorithm(pyhon)
+ studying algorithm(python)
