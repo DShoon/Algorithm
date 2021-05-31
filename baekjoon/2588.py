@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+line_1 = a*(b % 10)
+line_2 = a*((b % 100)//10)
+line_3 = a*((b//100))
+line_4 = line_1+line_2*10+line_3*100
+print(line_1)
+print(line_2)
+print(line_3)
+print(line_4)
