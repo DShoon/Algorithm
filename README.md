@@ -1,2 +1,1 @@
-# algorithm
- studying algorithm(python)
+# Algorithm
