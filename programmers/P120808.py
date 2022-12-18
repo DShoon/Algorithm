@@ -1,3 +1,5 @@
+import math
+
 def gcd(a, b):
     if a % b == 0:
         return b
@@ -17,6 +19,9 @@ def solution(denum1, num1, denum2, num2):
     #         gcd = i
     
     gcd_value = gcd(num3, denum3)
+    
+    # math 라이브러리 이용
+    # gcd_value = math.gcd(num3, denum3)
         
     result_numerator = denum3 // gcd_value
     result_denominator = num3 // gcd_value
